@@ -1,0 +1,18 @@
+section{
+    margin-top: 0px;
+    background-color: rgb(228, 253, 0);
+    
+}
+.btn{
+    justify-content: center;
+    margin-left: 650px;
+    font-size: medium;
+     text-decoration: none;
+     font-weight: bold;
+}
+.navbar{
+    background-color: black;
+}
+.back{
+    text-decoration: white;
+}

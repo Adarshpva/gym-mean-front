@@ -1,0 +1,86 @@
+/* .navbar{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+}
+ */
+ .navbar{
+    background-color: rgba(0, 0, 0,0.5);
+
+    
+}
+
+ .banner{
+    background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Gym-HD-Wallpaper-Free-download.jpg);
+background-size: cover; 
+ background-position: center ;
+height: 800px;
+/* background-attachment: fixed; */
+}
+
+
+ .card img{
+    transition: 3s;
+}
+
+.card:hover  img{
+    transform: scale(1.1);
+    transition: 2s;
+} 
+.box{
+background-size: cover; 
+background-position: center ;
+}
+.card{
+    background-color: rgb(36, 34, 34);
+}
+
+
+.service{
+    background-size: cover; 
+    background-position: center ;
+    }
+    .atag{
+        text-decoration: none;
+        color: white;
+    }
+    .search{
+        margin-left: 500px;
+        margin-right: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        cursor: pointer;
+        padding: 10px 20px;
+        background: rgb(253, 253, 253);
+        border-radius: 20px;
+        box-shadow:  0 10px 25px rgba(0, 0, 0, 0.3)
+    }
+    .search:hover input{
+        width: 200px;
+        color: rgb(0, 0, 0);
+    }
+    .search input{
+        width: 0;
+        color: white;
+        outline: none;
+        border: none;
+        font-weight: 500;
+        transition: 0.5s;
+        background: transparent;
+    }
+    .search a .fas{
+        color: rgb(233, 233, 238);
+        font-size: 18px;
+    }
+
+    .bc{
+        background-color: rgb(56, 53, 53);
+    }
+/* .new{ */
+    /* background-image: url(https://images.hellomagazine.com/horizon/original_aspect_ratio/46ea54ccd3cb-romantic-meal-z.jpg); */
+    /* background-size: cover; */
+    /* background-position: center  ; */
+    /* height: 400px; */
+/* } */

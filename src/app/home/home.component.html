@@ -1,0 +1,155 @@
+<div class="bc">
+    
+    
+    
+    <header style="margin-top: cover;" class="banner  ">
+    
+        <nav class="navbar navbar-expand-lg navbar-dark   ">
+            <div class="container-fluid ">
+                <h1 class="center text-center text-white fw-bolder text-center ">FITNESS</h1>
+    
+                <form class="d-flex ">
+                    <button class="btn btn-text-success fw-bolder text-white bg-transparent" routerLink="gallery"
+                        type="submit">GALLERY</button>
+                    <button class="btn btn-text-success fw-bolder text-white bg-transparent" type="submit"
+                        routerLink="about">ABOUT</button>
+                    <button class="btn btn-text-success fw-bolder text-white bg-transparent" routerLink="contact"
+                        type="submit">CONTACT</button>
+    
+                </form>
+            </div>
+        </nav>
+    
+    
+    </header>
+    
+    
+    <div class="container px-4 px-lg-5 my-5 text-white ">
+        <div class="text-center ">
+            <h1 class="display-4 fw-bolder ">Fitness</h1>
+            <p class="lead fw-bolder  mb-0">Welcome To Fitness Club</p>
+    
+        </div>
+    
+    </div>
+    
+    
+    
+    <div class="full container  mt-5 text-center text-white">
+        <div class="px-4 px-lg-5 mt-7  border-white rounded fw-bolder ">
+            <div class="about gx-4 gx-lg-5    ">
+    
+                <p style="font-size: 120%;">------ About Us ------</p>
+                <a style="font-size: 100%;">Fitness is dolor sit amet consectetur adipisicing elit. Dolorem non voluptatibus mollitia, recusandae
+                    dignissimos saepe repellat eveniet possimus maxime ipsum aut culpa voluptatum quam sequi temporibus
+                    incidunt alias? Rem, placeat.ipsum dolor sit amet consectetur adipisicing elit. Dolorem non voluptatibus
+                    mollitia, recusandae dignissimos saepe repellat eveniet possimus maxime ipsum aut culpa voluptatum ipsum
+                    dolor sit amet consectetur adipisicing elit. Dolorem non voluptatibus mollitia, recusandae dignissimos
+                    saepe repellat eveniet possimus maxime ipsum aut culpa voluptatum ipsum dolor sit amet consectetur
+                    adipisicing elit. Dolorem non voluptatibus mollitia, recusandae dignissimos saepe repellat eveniet
+                    possimus maxime ipsum aut culpa voluptatum ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                    non voluptatibus mollitia, recusandae dignissimos saepe repellat eveniet possimus maxime ipsum aut culpa
+                    voluptatum ipsum dolor sit amet consectetur adipisicing elit. Dolorem non voluptatibus mollitia,
+                    recusandae dignissimos saepe repellat eveniet possimus maxime ipsum aut culpa voluptatum ipsum dolor sit
+                    amet consectetur adipisicing elit. Dolorem non voluptatibus mollitia, recusandae dignissimos saepe
+                    repellat eveniet possimus maxime ipsum aut culpa voluptatum.</a>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    <!-- adventures list icons -->
+    
+    <div class="service">
+    
+        <section class="py-5">
+            <div class="container  mt-5 text-center">
+    
+    
+            </div>
+        </section>
+    
+    </div>
+    
+    
+    
+    <!-- cards -->
+    
+    <div class="box">
+    
+    
+        <!--1 st  card Section-->
+        <section class=" py-5">
+            <p class="text-center text-white" style="font-size: 120%;">------ Fitness details ------</p>
+    <div class="search">
+        
+    <!-- search box  -->
+        <input class="search-text" type="text" placeholder="Search  "  [(ngModel)]="searchkey">
+        <a href="#">
+            <i class="fas fa-search"></i>
+        </a>
+    </div>    
+        
+          <p style="font-size: 150%;" class="fw-bolder px-4 text-white text-center mt-4">EXPLORE OUR Workout Method</p>
+    
+    
+            <div class="container px-4 px-lg-5 mt-7 border-dark rounded p-3">
+                <div class="row gx-4 gx-lg-5 row-cols-4 row-cols-md-4 row-cols-xl-4 ">
+                    <div *ngFor="let gym of fitness |filter : searchkey : 'name'" >
+                        <div class="col mb-5">
+                            <div class="card h-100 p-7 ">
+                                <!-- Product image-->
+                                <a routerLink="view/{{gym.id}}"><img style="height: 300px;" [src]="gym.image" class="card-img-top"
+                                        [alt]="gym.image"></a>
+                                <h3 class="text-white text-center"> {{gym.name}}</h3>
+    
+    
+    
+                                <!-- card section  -->
+                                <!-- <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+        <div *ngFor="let gym of fitness |filter : searchkey : 'Title' " class="card col mb-5" style="width: 18rem;">
+       <a routerLink="view-page/{{fitness.id}}"><img [src]="fitness.Poster" class="card-img-top" [alt]="fitness.Title"></a>
+        <div class="card-body">
+            <h3>Title : {{fitness.Title}}</h3>
+            <h4>Year : {{fitness.Year}}</h4>  -->
+                                <!-- <p class="card-text">{{film.Plot}}</p> -->
+                                <!-- </div>
+      </div>
+    </div> 
+     -->
+    
+                                <!-- book now button -->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent mt-3">
+                                    <div class="d-flex justify-content-evenly">
+                                        <!-- add to cart btn-->
+                                        <button class="btn btn-dark"><a class="atag" routerLink="view/{{gym.id}}">view</a></button>
+    
+                                    </div>
+                                </div>
+    
+    
+                            </div>
+                        </div>
+                    </div>
+    
+    
+    
+                <!-- <div class="d-grid justify-content-center">
+    
+                    <button class="btn btn-success text-white" routerLink="offers" data-bs-toggle="modal"
+                        Offers >></button>
+                </div> -->
+    </div>
+            </div>
+        </section>
+    
+    
+    
+    
+    
+</div>
+
+    <!-- </div> -->

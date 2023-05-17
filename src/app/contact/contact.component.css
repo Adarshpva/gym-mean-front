@@ -1,0 +1,71 @@
+.container-b{
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+a{
+    color: rgb(10, 8, 8);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+}
+div a:hover{
+    color: rgb(248, 240, 240);
+    transition: .2s;
+}
+.contact {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .contact::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, rgb(200, 255, 0), rgb(0, 204, 255));
+    animation: gradientAnimation 10s ease infinite;
+    z-index: -1;
+  }
+  .container {
+    max-width: 800px;
+    margin-bottom: 80px;
+    margin-top: 100px;
+    /* margin: 0 auto; */
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  h2 {
+    justify-content: space-between;
+    font-size: 5vw;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  
+  .contact-item i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-item p {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  .container-f{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(13, 13, 15);
+    font-size: larger;
+    margin-left: 50px;
+    margin-top: 50px;
+}

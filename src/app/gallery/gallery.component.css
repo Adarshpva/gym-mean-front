@@ -1,0 +1,32 @@
+.video{
+    width: 40%;
+    height: 500px;
+    margin-right: 100px;
+    margin-left: 30px;
+    margin-top: 10px;
+    display: inline-flex;
+    justify-content: space-evenly;
+
+
+}
+.vid{
+
+    background-image: url(https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?cs=srgb&dl=pexels-victor-freitas-841130.jpg&fm=jpg);
+
+}
+
+
+.btn{
+    justify-content: center;
+    margin-left: 650px;
+    font-size: medium;
+     text-decoration: none;
+     font-weight: bold;
+}
+
+.navbar{
+    background-color: black;
+}
+.back{
+    text-decoration: white;
+}
